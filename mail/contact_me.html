@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+function sendMail(){
+var sb= document.getElementById("pmSubject").value;
+window.open('mailto:test@example.com?subject='+sb+'&body=body');
+}
+</script>
+</head>
+<body>
+<form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post">
+Enter Friend's Email:
+<input name="pmSubject" id="pmSubject" type="text" maxlength="64" style="width:98%;" />
+<input name="pmSubmit" type="submit" value="Invite" />
+</body>
+</html>
